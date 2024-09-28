@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-US">
+        <link rel="stylesheet" href="contact.css">
+        <title> My code </title>
+
+    </head>
+    <body>
+        <main class="container">
+            <section id="header">
+                <h4>Calc</h4>
+                <div>THEME</div>
+            </section>
+
+            <section id="result">
+              <p id="output"><b>0</b></p>  
+            </section>
+
+            <section id="functions">
+                <button onclick='handleClick("7")'>7</button>
+                <button onclick='handleClick("8")'>8</button>
+                <button onclick='handleClick("9")'>9</button>
+                <button>DEL</button>
+                <button onclick='handleClick("4")'>4</button>
+                <button id="button" onclick='handleClick("5")'>5</button>
+                <button onclick='handleClick("6")'>6</button>
+                <button id="plus" onclick='plusFunc("+")'>+</button>
+                <button onclick='handleClick("1")'>1</button>
+                <button onclick='handleClick("2")'>2</button>
+                <button onclick='handleClick("3")'>3</button>
+                <button>-</button>
+                <button>/</button>
+                <button onclick='handleClick("0")'>0</button>
+                <button>.</button>
+                <button>x</button>
+                <button class ="col-2">RESET</button>
+                <button class ="col-2">=</button>
+            </section>
+        </main>
+        <script>
+            var button = document.querySelectorAll('button');
+            var plus = document.getElementById('plus');
+            var result  = document.getElementById("output");
+            var finalResult = "";
+
+            function handleClick(numb) {
+            if (numb !== '+') {
+            finalResult = finalResult + numb
+            result.innerText = finalResult;
+
+    }
+
+
+    console.log('clicked', result);
+}
+
+function plusFunc(numb){
+    if (numb === '+') {
+        var numb1 = numb;
+        result.innerText = "";
+        var numb2 = numb;
+
+        console.log(numb1, numb2)
+    }
+
+}
+
+
+button.addEventListener("click", handleClick);
+plus.addEventListener("click", plusFunc);
+
+function kolaFunction(a, b) {
+    return a * b;
+}
+var result2 = kolaFunction(4, 3);
+console.log(result2);
+        </script>
+
+    </body>
+
+
+</html>

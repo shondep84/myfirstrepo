@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container{
+   background-image: url('range4.jpg');
+   height: 100vh;
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin-top: -20px;
+   opacity: 0.8;
+}
+
+.highlight{
+    color: yellow;
+    size: 30px; 
+}
+.navbar{
+    background-color: green;
+}
+
+.navbar ul{
+    list-style-type: none;
+    /* background-color: green; */
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: yellow;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+
+/* .navbar li { */
+    /* display: inline-block; */
+    /* margin */
+
+
+/* } */
+.navbar ul {
+    display: flex;
+}
+
+
+.text-box{
+    width: 30%;
+}
+
+#h01{
+    text-align: center;
+    color: black;
+    size: bolder;
+}
+
+#p01{
+    size: bolder;
+    margin: 10px;
+    font-size: bolder;
+    margin-top: 10px;
+    padding: 5px;
+}
